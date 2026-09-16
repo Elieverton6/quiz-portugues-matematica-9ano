@@ -59,508 +59,508 @@
 
   <script>
       const questions = [
-        // {
-        //   "question": "1. O valor da amizade<br><br>\nUma boa amizade é construída com respeito, confiança e companheirismo. Um verdadeiro amigo está presente nos momentos felizes, mas também ajuda quando enfrentamos dificuldades.\n\nQual é o assunto principal do texto?",
-        //   "options": [
-        //     "A) A importância do dinheiro.",
-        //     "B) O valor da amizade.",
-        //     "C) As dificuldades da escola.",
-        //     "D) A importância das viagens."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "2. João acordou cedo no domingo. Ele tomou café, arrumou sua bicicleta e saiu para passear no parque.\n\nPor que João saiu de casa?",
-        //   "options": [
-        //     "A) Para estudar.",
-        //     "B) Para trabalhar.",
-        //     "C) Para passear no parque.",
-        //     "D) Para visitar um amigo."
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "3. Economizar água é responsabilidade de todos. Fechar a torneira enquanto escovamos os dentes é uma atitude simples que ajuda a evitar o desperdício.\n\nDe acordo com o texto, uma maneira de economizar água é",
-        //   "options": [
-        //     "A) deixar a torneira aberta.",
-        //     "B) tomar banhos mais demorados.",
-        //     "C) fechar a torneira ao escovar os dentes.",
-        //     "D) lavar a calçada todos os dias."
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "4. Maria estudou bastante para a prova. No dia seguinte, respondeu às questões com segurança e conseguiu uma boa nota.\n\nPode-se concluir que Maria",
-        //   "options": [
-        //     "A) não estudou para a prova.",
-        //     "B) teve dificuldade para responder às questões.",
-        //     "C) estudou e teve um bom resultado.",
-        //     "D) faltou à escola."
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "5. AVISO\nA reunião de pais acontecerá na próxima sexta-feira, às 14 horas, na sala dos professores.\n\nA finalidade desse texto é",
-        //   "options": [
-        //     "A) contar uma história.",
-        //     "B) divulgar uma informação.",
-        //     "C) ensinar uma receita.",
-        //     "D) fazer uma propaganda."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "6. Pedro perdeu o ônibus e chegou atrasado à escola. Ao entrar na sala, pediu desculpas ao professor.\n\nPor que Pedro chegou atrasado?",
-        //   "options": [
-        //     "A) Porque dormiu na escola.",
-        //     "B) Porque perdeu o ônibus.",
-        //     "C) Porque não encontrou o professor.",
-        //     "D) Porque estava fazendo uma prova."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "7. Campanha\n“Plante uma árvore hoje. O planeta agradece amanhã!”\n\nNesse texto, a expressão “O planeta agradece amanhã” significa que",
-        //   "options": [
-        //     "A) as árvores prejudicam o planeta.",
-        //     "B) plantar árvores ajuda o meio ambiente.",
-        //     "C) ninguém precisa cuidar da natureza.",
-        //     "D) o planeta não precisa de árvores."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "8. Lucas comprou um livro novo. Ele começou a leitura ainda naquela noite.\n\nA palavra destacada refere-se a",
-        //   "options": [
-        //     "A) livro.",
-        //     "B) Lucas.",
-        //     "C) noite.",
-        //     "D) leitura."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "9. Ana estava cansada, mas continuou estudando para a prova.\n\nA palavra “mas” estabelece uma ideia de",
-        //   "options": [
-        //     "A) causa.",
-        //     "B) oposição.",
-        //     "C) conclusão.",
-        //     "D) explicação."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "10. O menino encontrou um cachorro na rua. O animal estava com fome e com sede.\n\nA expressão “O animal” foi utilizada para",
-        //   "options": [
-        //     "A) repetir o nome menino.",
-        //     "B) substituir a palavra cachorro.",
-        //     "C) indicar o lugar.",
-        //     "D) indicar uma pessoa."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "11. Feche a torneira! Economize água!\n\nO ponto de exclamação foi utilizado para",
-        //   "options": [
-        //     "A) indicar dúvida.",
-        //     "B) demonstrar uma ordem ou orientação.",
-        //     "C) indicar uma pergunta.",
-        //     "D) separar palavras."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "12. “Você já terminou sua atividade?”\n\nO ponto de interrogação indica",
-        //   "options": [
-        //     "A) uma pergunta.",
-        //     "B) uma ordem.",
-        //     "C) uma afirmação.",
-        //     "D) uma surpresa."
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "13. A professora Wanessa explicou a atividade, porque alguns alunos estavam com dúvidas.\n\nA palavra “porque” estabelece uma relação de",
-        //   "options": [
-        //     "A) oposição.",
-        //     "B) causa ou explicação.",
-        //     "C) comparação.",
-        //     "D) conclusão."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "14. A escola Erundina realizou uma campanha de arrecadação de alimentos. Os estudantes participaram da ação e ajudaram várias famílias.\n\nA expressão “da ação” refere-se",
-        //   "options": [
-        //     "A) à escola.",
-        //     "B) aos estudantes.",
-        //     "C) à campanha de arrecadação de alimentos.",
-        //     "D) às famílias."
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "15. “O sol brilhava forte naquela manhã.”\n\nA palavra “forte” caracteriza",
-        //   "options": [
-        //     "A) o sol.",
-        //     "B) a manhã.",
-        //     "C) brilhava.",
-        //     "D) naquela."
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "16. “Os alunos estudaram para a avaliação.”\n\nA palavra destacada indica uma ação que",
-        //   "options": [
-        //     "A) ainda acontecerá.",
-        //     "B) está acontecendo agora.",
-        //     "C) já aconteceu.",
-        //     "D) nunca aconteceu."
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "17. “A menina corre todos os dias no parque.”\n\nO verbo destacado está indicando uma ação",
-        //   "options": [
-        //     "A) habitual.",
-        //     "B) passada.",
-        //     "C) futura.",
-        //     "D) impossível."
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "18. “O garoto estava muito feliz com o resultado.”\n\nA palavra “feliz” indica uma característica",
-        //   "options": [
-        //     "A) do garoto.",
-        //     "B) do resultado.",
-        //     "C) do tempo.",
-        //     "D) do lugar."
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "19. VENDE-SE\nBicicleta usada, em bom estado de conservação. Interessados devem entrar em contato pelo telefone informado no cartaz.\n\nEsse texto pertence principalmente ao gênero",
-        //   "options": [
-        //     "A) anúncio.",
-        //     "B) receita.",
-        //     "C) notícia.",
-        //     "D) poema."
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "20. “A leitura abre portas para novos conhecimentos.”\n\nNesse texto, a expressão “abre portas” significa",
-        //   "options": [
-        //     "A) construir uma porta.",
-        //     "B) entrar em uma casa.",
-        //     "C) proporcionar novas oportunidades e conhecimentos.",
-        //     "D) fechar um livro."
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "21. O celular é muito útil no dia a dia. Podemos utilizá-lo para estudar, conversar com familiares e pesquisar informações. Porém, é importante utilizá-lo com responsabilidade.\n\nQual é a principal mensagem do texto?",
-        //   "options": [
-        //     "A) O celular deve ser usado somente para jogos.",
-        //     "B) O celular não apresenta nenhuma utilidade.",
-        //     "C) O celular pode ser útil, mas deve ser usado com responsabilidade.",
-        //     "D) As pessoas não devem utilizar celulares."
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "22. “Embora estivesse cansado, Carlos terminou seu trabalho.”\n\nA expressão “Embora estivesse cansado” indica uma ideia de",
-        //   "options": [
-        //     "A) condição.",
-        //     "B) oposição/concessão.",
-        //     "C) finalidade.",
-        //     "D) conclusão."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "23. Notícia\nUma escola do município realizou uma feira de ciências nesta semana. Os estudantes apresentaram experiências e projetos desenvolvidos durante as aulas.\n\nQual foi o principal acontecimento apresentado no texto?",
-        //   "options": [
-        //     "A) Uma competição esportiva.",
-        //     "B) Uma feira de ciências.",
-        //     "C) Uma reunião de professores.",
-        //     "D) Uma festa de aniversário."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "24. “A menina chegou em casa e encontrou sua mãe. Ela estava preparando o jantar.”\n\nNesse trecho, a palavra “Ela” refere-se",
-        //   "options": [
-        //     "A) à menina.",
-        //     "B) à mãe.",
-        //     "C) à casa.",
-        //     "D) ao jantar."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "25. “Respeitar o próximo é uma atitude que contribui para uma convivência melhor.”\n\nDe acordo com o texto, respeitar o próximo",
-        //   "options": [
-        //     "A) prejudica a convivência.",
-        //     "B) melhora a convivência entre as pessoas.",
-        //     "C) impede a amizade.",
-        //     "D) aumenta os conflitos."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "26. Preserve a natureza\nAs florestas são importantes para a vida no planeta. Por isso, devemos evitar o desmatamento, não jogar lixo nas ruas e cuidar dos espaços verdes.\n\nQual é a finalidade principal desse texto?",
-        //   "options": [
-        //     "A) Divertir o leitor com uma história.",
-        //     "B) Ensinar uma receita.",
-        //     "C) Incentivar atitudes de preservação ambiental.",
-        //     "D) Divulgar um evento esportivo."
-        //   ],
-        //   "answer": 2
-        // },
+        {
+          "question": "1. O valor da amizade<br><br>\nUma boa amizade é construída com respeito, confiança e companheirismo. Um verdadeiro amigo está presente nos momentos felizes, mas também ajuda quando enfrentamos dificuldades.\n\nQual é o assunto principal do texto?",
+          "options": [
+            "A) A importância do dinheiro.",
+            "B) O valor da amizade.",
+            "C) As dificuldades da escola.",
+            "D) A importância das viagens."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "2. João acordou cedo no domingo. Ele tomou café, arrumou sua bicicleta e saiu para passear no parque.\n\nPor que João saiu de casa?",
+          "options": [
+            "A) Para estudar.",
+            "B) Para trabalhar.",
+            "C) Para passear no parque.",
+            "D) Para visitar um amigo."
+          ],
+          "answer": 2
+        },
+        {
+          "question": "3. Economizar água é responsabilidade de todos. Fechar a torneira enquanto escovamos os dentes é uma atitude simples que ajuda a evitar o desperdício.\n\nDe acordo com o texto, uma maneira de economizar água é",
+          "options": [
+            "A) deixar a torneira aberta.",
+            "B) tomar banhos mais demorados.",
+            "C) fechar a torneira ao escovar os dentes.",
+            "D) lavar a calçada todos os dias."
+          ],
+          "answer": 2
+        },
+        {
+          "question": "4. Maria estudou bastante para a prova. No dia seguinte, respondeu às questões com segurança e conseguiu uma boa nota.\n\nPode-se concluir que Maria",
+          "options": [
+            "A) não estudou para a prova.",
+            "B) teve dificuldade para responder às questões.",
+            "C) estudou e teve um bom resultado.",
+            "D) faltou à escola."
+          ],
+          "answer": 2
+        },
+        {
+          "question": "5. AVISO\nA reunião de pais acontecerá na próxima sexta-feira, às 14 horas, na sala dos professores.\n\nA finalidade desse texto é",
+          "options": [
+            "A) contar uma história.",
+            "B) divulgar uma informação.",
+            "C) ensinar uma receita.",
+            "D) fazer uma propaganda."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "6. Pedro perdeu o ônibus e chegou atrasado à escola. Ao entrar na sala, pediu desculpas ao professor.\n\nPor que Pedro chegou atrasado?",
+          "options": [
+            "A) Porque dormiu na escola.",
+            "B) Porque perdeu o ônibus.",
+            "C) Porque não encontrou o professor.",
+            "D) Porque estava fazendo uma prova."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "7. Campanha\n“Plante uma árvore hoje. O planeta agradece amanhã!”\n\nNesse texto, a expressão “O planeta agradece amanhã” significa que",
+          "options": [
+            "A) as árvores prejudicam o planeta.",
+            "B) plantar árvores ajuda o meio ambiente.",
+            "C) ninguém precisa cuidar da natureza.",
+            "D) o planeta não precisa de árvores."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "8. Lucas comprou um livro novo. Ele começou a leitura ainda naquela noite.\n\nA palavra destacada refere-se a",
+          "options": [
+            "A) livro.",
+            "B) Lucas.",
+            "C) noite.",
+            "D) leitura."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "9. Ana estava cansada, mas continuou estudando para a prova.\n\nA palavra “mas” estabelece uma ideia de",
+          "options": [
+            "A) causa.",
+            "B) oposição.",
+            "C) conclusão.",
+            "D) explicação."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "10. O menino encontrou um cachorro na rua. O animal estava com fome e com sede.\n\nA expressão “O animal” foi utilizada para",
+          "options": [
+            "A) repetir o nome menino.",
+            "B) substituir a palavra cachorro.",
+            "C) indicar o lugar.",
+            "D) indicar uma pessoa."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "11. Feche a torneira! Economize água!\n\nO ponto de exclamação foi utilizado para",
+          "options": [
+            "A) indicar dúvida.",
+            "B) demonstrar uma ordem ou orientação.",
+            "C) indicar uma pergunta.",
+            "D) separar palavras."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "12. “Você já terminou sua atividade?”\n\nO ponto de interrogação indica",
+          "options": [
+            "A) uma pergunta.",
+            "B) uma ordem.",
+            "C) uma afirmação.",
+            "D) uma surpresa."
+          ],
+          "answer": 0
+        },
+        {
+          "question": "13. A professora Wanessa explicou a atividade, porque alguns alunos estavam com dúvidas.\n\nA palavra “porque” estabelece uma relação de",
+          "options": [
+            "A) oposição.",
+            "B) causa ou explicação.",
+            "C) comparação.",
+            "D) conclusão."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "14. A escola Erundina realizou uma campanha de arrecadação de alimentos. Os estudantes participaram da ação e ajudaram várias famílias.\n\nA expressão “da ação” refere-se",
+          "options": [
+            "A) à escola.",
+            "B) aos estudantes.",
+            "C) à campanha de arrecadação de alimentos.",
+            "D) às famílias."
+          ],
+          "answer": 2
+        },
+        {
+          "question": "15. “O sol brilhava forte naquela manhã.”\n\nA palavra “forte” caracteriza",
+          "options": [
+            "A) o sol.",
+            "B) a manhã.",
+            "C) brilhava.",
+            "D) naquela."
+          ],
+          "answer": 0
+        },
+        {
+          "question": "16. “Os alunos estudaram para a avaliação.”\n\nA palavra destacada indica uma ação que",
+          "options": [
+            "A) ainda acontecerá.",
+            "B) está acontecendo agora.",
+            "C) já aconteceu.",
+            "D) nunca aconteceu."
+          ],
+          "answer": 2
+        },
+        {
+          "question": "17. “A menina corre todos os dias no parque.”\n\nO verbo destacado está indicando uma ação",
+          "options": [
+            "A) habitual.",
+            "B) passada.",
+            "C) futura.",
+            "D) impossível."
+          ],
+          "answer": 0
+        },
+        {
+          "question": "18. “O garoto estava muito feliz com o resultado.”\n\nA palavra “feliz” indica uma característica",
+          "options": [
+            "A) do garoto.",
+            "B) do resultado.",
+            "C) do tempo.",
+            "D) do lugar."
+          ],
+          "answer": 0
+        },
+        {
+          "question": "19. VENDE-SE\nBicicleta usada, em bom estado de conservação. Interessados devem entrar em contato pelo telefone informado no cartaz.\n\nEsse texto pertence principalmente ao gênero",
+          "options": [
+            "A) anúncio.",
+            "B) receita.",
+            "C) notícia.",
+            "D) poema."
+          ],
+          "answer": 0
+        },
+        {
+          "question": "20. “A leitura abre portas para novos conhecimentos.”\n\nNesse texto, a expressão “abre portas” significa",
+          "options": [
+            "A) construir uma porta.",
+            "B) entrar em uma casa.",
+            "C) proporcionar novas oportunidades e conhecimentos.",
+            "D) fechar um livro."
+          ],
+          "answer": 2
+        },
+        {
+          "question": "21. O celular é muito útil no dia a dia. Podemos utilizá-lo para estudar, conversar com familiares e pesquisar informações. Porém, é importante utilizá-lo com responsabilidade.\n\nQual é a principal mensagem do texto?",
+          "options": [
+            "A) O celular deve ser usado somente para jogos.",
+            "B) O celular não apresenta nenhuma utilidade.",
+            "C) O celular pode ser útil, mas deve ser usado com responsabilidade.",
+            "D) As pessoas não devem utilizar celulares."
+          ],
+          "answer": 2
+        },
+        {
+          "question": "22. “Embora estivesse cansado, Carlos terminou seu trabalho.”\n\nA expressão “Embora estivesse cansado” indica uma ideia de",
+          "options": [
+            "A) condição.",
+            "B) oposição/concessão.",
+            "C) finalidade.",
+            "D) conclusão."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "23. Notícia\nUma escola do município realizou uma feira de ciências nesta semana. Os estudantes apresentaram experiências e projetos desenvolvidos durante as aulas.\n\nQual foi o principal acontecimento apresentado no texto?",
+          "options": [
+            "A) Uma competição esportiva.",
+            "B) Uma feira de ciências.",
+            "C) Uma reunião de professores.",
+            "D) Uma festa de aniversário."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "24. “A menina chegou em casa e encontrou sua mãe. Ela estava preparando o jantar.”\n\nNesse trecho, a palavra “Ela” refere-se",
+          "options": [
+            "A) à menina.",
+            "B) à mãe.",
+            "C) à casa.",
+            "D) ao jantar."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "25. “Respeitar o próximo é uma atitude que contribui para uma convivência melhor.”\n\nDe acordo com o texto, respeitar o próximo",
+          "options": [
+            "A) prejudica a convivência.",
+            "B) melhora a convivência entre as pessoas.",
+            "C) impede a amizade.",
+            "D) aumenta os conflitos."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "26. Preserve a natureza\nAs florestas são importantes para a vida no planeta. Por isso, devemos evitar o desmatamento, não jogar lixo nas ruas e cuidar dos espaços verdes.\n\nQual é a finalidade principal desse texto?",
+          "options": [
+            "A) Divertir o leitor com uma história.",
+            "B) Ensinar uma receita.",
+            "C) Incentivar atitudes de preservação ambiental.",
+            "D) Divulgar um evento esportivo."
+          ],
+          "answer": 2
+        },
 
-        // {
-        //   "question": "27. A escola Erundina arrecadou 250 kg de alimentos para uma campanha. Desse total, 40% foram destinados a uma instituição. Quantos quilogramas foram destinados?",
-        //   "options": [
-        //     "A) 80 kg",
-        //     "B) 90 kg",
-        //     "C) 100 kg",
-        //     "D) 120 kg"
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "28. O resultado de [(-4)² + 2/5 - √81] é",
-        //   "options": [
-        //     "A) 37/5.",
-        //     "B) 27/5.",
-        //     "C) 22/5.",
-        //     "D) 11/5."
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "29. Qual dos números abaixo é irracional?",
-        //   "options": [
-        //     "A) 0,5",
-        //     "B) 3/4",
-        //     "C) √2",
-        //     "D) 2"
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "30. Ana Beatriz tinha R$ 180,00, gastou R$ 55,00 na lanchonete e R$ 80,00 no cinema com suas amigas. Quanto restou?",
-        //   "options": [
-        //     "A) R$ 35,00",
-        //     "B) R$ 40,00",
-        //     "C) R$ 45,00",
-        //     "D) R$ 50,00"
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "31. Uma camiseta custa R$ 120,00 e recebeu desconto de 25%. Ana Rita comprou duas camisetas. Qual será o valor do desconto?",
-        //   "options": [
-        //     "A) R$ 50,00",
-        //     "B) R$ 60,00",
-        //     "C) R$ 65,00",
-        //     "D) R$ 70,00"
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "32. Observe a expressão:\n-3x + 5x - 2\n\nA forma simplificada dessa expressão é:",
-        //   "options": [
-        //     "A) 2x - 2",
-        //     "B) 8x + 2",
-        //     "C) 3x - 2",
-        //     "D) 15x - 2"
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "33. Ana Rita vai três dias por semana ao parque da Jaqueira para correr. Na segunda, ela correu o equivalente a dois quilômetros, na quarta, 2500 metros e, na sexta, 3500 metros. Nessa semana, quantos quilômetros, ao todo, Ana Rita correu?",
-        //   "options": [
-        //     "A) 2 km.",
-        //     "B) 8 km.",
-        //     "C) 35 km.",
-        //     "D) 75 km."
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "34. Considere as seguintes afirmações sobre quadriláteros:\nI. Todo quadrado é um retângulo.\nII. Todo quadrado é um losango.\nIII. Todo retângulo possui quatro lados iguais.\nIV. Todo losango possui quatro lados iguais.\n\nQual alternativa apresenta somente afirmações verdadeiras?",
-        //   "options": [
-        //     "A) I e II.",
-        //     "B) I e III.",
-        //     "C) II e III.",
-        //     "D) I, II e IV."
-        //   ],
-        //   "answer": 3
-        // },
-        // {
-        //   "question": "35. Uma corrida de táxi cobra R$ 5,00 de taxa fixa mais R$ 3,00 por quilômetro percorrido. Qual expressão representa o preço P da corrida para x quilômetros?",
-        //   "options": [
-        //     "A) P = 5x + 3",
-        //     "B) P = 3x + 5",
-        //     "C) P = 8x",
-        //     "D) P = 5x - 3"
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "36. Raquel foi a uma papelaria, comprou cinco cadernos e pagou R$ 55,00. Mantendo o mesmo preço por unidade, Flavio adquiriu dois cadernos. Quanto ele pagou?",
-        //   "options": [
-        //     "A) R$ 18,00",
-        //     "B) R$ 14,00",
-        //     "C) R$ 22,00",
-        //     "D) R$ 26,00"
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "37. Uma caixa-d'água tem formato cilíndrico. Ela possui raio da base igual a 2 m e altura de 5 m. Considerando π = 3, qual é o volume dessa caixa-d'água?",
-        //   "options": [
-        //     "A) 30 m³",
-        //     "B) 40 m³",
-        //     "C) 60 m³",
-        //     "D) 80 m³"
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "38. Em uma turma, 12 estudantes são meninos e 18 são meninas. Qual é a razão entre o número de meninos e o total de estudantes?",
-        //   "options": [
-        //     "A) 2/5",
-        //     "B) 3/5",
-        //     "C) 2/3",
-        //     "D) 3/2"
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "39. Um terreno com formato retangular foi reduzido em uma área de 45 m², ficando assim formado um quadrado com um total de 81 m² de área.\n\nA medida do comprimento dos lados do terreno, antes dessa redução, era:",
-        //   "options": [
-        //     "A) 6 m e 8 m",
-        //     "B) 10 m e 7 m",
-        //     "C) 14 m e 9 m",
-        //     "D) 15 m e 8 m"
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "40. Uma embalagem tem o formato de um paralelepípedo retângulo, como uma caixa de sapatos. Ao ser aberta completamente, sua planificação deverá ser formada por:",
-        //   "options": [
-        //     "A) 6 retângulos.",
-        //     "B) 4 círculos e 2 retângulos.",
-        //     "C) 6 triângulos.",
-        //     "D) 2 quadrados e 4 círculos."
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "41. Um triângulo possui base de 10 cm e altura de 6 cm. Qual é sua área?",
-        //   "options": [
-        //     "A) 16 cm²",
-        //     "B) 30 cm²",
-        //     "C) 40 cm²",
-        //     "D) 60 cm²"
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "42. Uma circunferência possui raio de 5 cm. Considerando π = 3,14, qual é aproximadamente o comprimento dessa circunferência?",
-        //   "options": [
-        //     "A) 15,7 cm",
-        //     "B) 25,0 cm",
-        //     "C) 31,4 cm",
-        //     "D) 62,8 cm"
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "43. Observe a reta numérica: Um estudante marcou o ponto P e o ponto Q sobre a reta numérica.\n\nQual alternativa apresenta corretamente os números correspondentes aos pontos P e Q?",
-        //   "image": "reta.png",
-        //   "options": [
-        //     "A) P = 6 e Q = −2",
-        //     "B) P = −6 e Q = 2",
-        //     "C) P = −2 e Q = 6",
-        //     "D) P = 2 e Q = −6"
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "44. Observando uma figura retangular desenhada em uma malha quadriculada. Suas dimensões são 6 quadradinhos de comprimento por 3 quadradinhos de largura. A figura foi reduzida pela metade em todas as suas dimensões.\n\nQual será a área da figura reduzida?",
-        //   "options": [
-        //     "A) 4,5 quadradinhos",
-        //     "B) 9 quadradinhos",
-        //     "C) 18 quadradinhos",
-        //     "D) 36 quadradinhos"
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "45. Em uma pesquisa, as notas de cinco alunos foram: 6, 7, 8, 9 e 10. Qual é a média dessas notas?",
-        //   "options": [
-        //     "A) 7",
-        //     "B) 8",
-        //     "C) 8,5",
-        //     "D) 9"
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "46. As idades de cinco estudantes são: 12, 14, 14, 15 e 16 anos. Qual é a moda dessas idades?",
-        //   "options": [
-        //     "A) 12",
-        //     "B) 14",
-        //     "C) 15",
-        //     "D) 16"
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "47. Observe os pontos no plano cartesiano:\nA = (2,3)\nB = (-2,3)\nC = (-2,-3)\nD = (2,-3)\n\nEm qual quadrante está localizado o ponto A?",
-        //   "options": [
-        //     "A) I",
-        //     "B) II",
-        //     "C) III",
-        //     "D) IV"
-        //   ],
-        //   "answer": 0
-        // },
-        // {
-        //   "question": "48. O ponto P = (-4,2) está localizado em qual quadrante do plano cartesiano?",
-        //   "options": [
-        //     "A) I",
-        //     "B) II",
-        //     "C) III",
-        //     "D) IV"
-        //   ],
-        //   "answer": 1
-        // },
-        // {
-        //   "question": "49. Na escola Erundina, 200 estudantes responderam a uma pesquisa sobre a preferência esportiva:\n\n90 preferem futebol;\n60 preferem vôlei;\n30 preferem basquete;\n20 preferem handebol.\n\nEscolhendo um estudante ao acaso, a probabilidade de ele não preferir futebol é de?",
-        //   "options": [
-        //     "A) 45%",
-        //     "B) 50%",
-        //     "C) 55%",
-        //     "D) 60%"
-        //   ],
-        //   "answer": 2
-        // },
-        // {
-        //   "question": "50. Considere a função:\nf(x) = 2x - 2\n\nQual é o valor de f(4)?",
-        //   "options": [
-        //     "A) 5",
-        //     "B) 6",
-        //     "C) 7",
-        //     "D) 8"
-        //   ],
-        //   "answer": 1
-        // },
+        {
+          "question": "27. A escola Erundina arrecadou 250 kg de alimentos para uma campanha. Desse total, 40% foram destinados a uma instituição. Quantos quilogramas foram destinados?",
+          "options": [
+            "A) 80 kg",
+            "B) 90 kg",
+            "C) 100 kg",
+            "D) 120 kg"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "28. O resultado de [(-4)² + 2/5 - √81] é",
+          "options": [
+            "A) 37/5.",
+            "B) 27/5.",
+            "C) 22/5.",
+            "D) 11/5."
+          ],
+          "answer": 0
+        },
+        {
+          "question": "29. Qual dos números abaixo é irracional?",
+          "options": [
+            "A) 0,5",
+            "B) 3/4",
+            "C) √2",
+            "D) 2"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "30. Ana Beatriz tinha R$ 180,00, gastou R$ 55,00 na lanchonete e R$ 80,00 no cinema com suas amigas. Quanto restou?",
+          "options": [
+            "A) R$ 35,00",
+            "B) R$ 40,00",
+            "C) R$ 45,00",
+            "D) R$ 50,00"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "31. Uma camiseta custa R$ 120,00 e recebeu desconto de 25%. Ana Rita comprou duas camisetas. Qual será o valor do desconto?",
+          "options": [
+            "A) R$ 50,00",
+            "B) R$ 60,00",
+            "C) R$ 65,00",
+            "D) R$ 70,00"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "32. Observe a expressão:\n-3x + 5x - 2\n\nA forma simplificada dessa expressão é:",
+          "options": [
+            "A) 2x - 2",
+            "B) 8x + 2",
+            "C) 3x - 2",
+            "D) 15x - 2"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "33. Ana Rita vai três dias por semana ao parque da Jaqueira para correr. Na segunda, ela correu o equivalente a dois quilômetros, na quarta, 2500 metros e, na sexta, 3500 metros. Nessa semana, quantos quilômetros, ao todo, Ana Rita correu?",
+          "options": [
+            "A) 2 km.",
+            "B) 8 km.",
+            "C) 35 km.",
+            "D) 75 km."
+          ],
+          "answer": 1
+        },
+        {
+          "question": "34. Considere as seguintes afirmações sobre quadriláteros:\nI. Todo quadrado é um retângulo.\nII. Todo quadrado é um losango.\nIII. Todo retângulo possui quatro lados iguais.\nIV. Todo losango possui quatro lados iguais.\n\nQual alternativa apresenta somente afirmações verdadeiras?",
+          "options": [
+            "A) I e II.",
+            "B) I e III.",
+            "C) II e III.",
+            "D) I, II e IV."
+          ],
+          "answer": 3
+        },
+        {
+          "question": "35. Uma corrida de táxi cobra R$ 5,00 de taxa fixa mais R$ 3,00 por quilômetro percorrido. Qual expressão representa o preço P da corrida para x quilômetros?",
+          "options": [
+            "A) P = 5x + 3",
+            "B) P = 3x + 5",
+            "C) P = 8x",
+            "D) P = 5x - 3"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "36. Raquel foi a uma papelaria, comprou cinco cadernos e pagou R$ 55,00. Mantendo o mesmo preço por unidade, Flavio adquiriu dois cadernos. Quanto ele pagou?",
+          "options": [
+            "A) R$ 18,00",
+            "B) R$ 14,00",
+            "C) R$ 22,00",
+            "D) R$ 26,00"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "37. Uma caixa-d'água tem formato cilíndrico. Ela possui raio da base igual a 2 m e altura de 5 m. Considerando π = 3, qual é o volume dessa caixa-d'água?",
+          "options": [
+            "A) 30 m³",
+            "B) 40 m³",
+            "C) 60 m³",
+            "D) 80 m³"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "38. Em uma turma, 12 estudantes são meninos e 18 são meninas. Qual é a razão entre o número de meninos e o total de estudantes?",
+          "options": [
+            "A) 2/5",
+            "B) 3/5",
+            "C) 2/3",
+            "D) 3/2"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "39. Um terreno com formato retangular foi reduzido em uma área de 45 m², ficando assim formado um quadrado com um total de 81 m² de área.\n\nA medida do comprimento dos lados do terreno, antes dessa redução, era:",
+          "options": [
+            "A) 6 m e 8 m",
+            "B) 10 m e 7 m",
+            "C) 14 m e 9 m",
+            "D) 15 m e 8 m"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "40. Uma embalagem tem o formato de um paralelepípedo retângulo, como uma caixa de sapatos. Ao ser aberta completamente, sua planificação deverá ser formada por:",
+          "options": [
+            "A) 6 retângulos.",
+            "B) 4 círculos e 2 retângulos.",
+            "C) 6 triângulos.",
+            "D) 2 quadrados e 4 círculos."
+          ],
+          "answer": 0
+        },
+        {
+          "question": "41. Um triângulo possui base de 10 cm e altura de 6 cm. Qual é sua área?",
+          "options": [
+            "A) 16 cm²",
+            "B) 30 cm²",
+            "C) 40 cm²",
+            "D) 60 cm²"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "42. Uma circunferência possui raio de 5 cm. Considerando π = 3,14, qual é aproximadamente o comprimento dessa circunferência?",
+          "options": [
+            "A) 15,7 cm",
+            "B) 25,0 cm",
+            "C) 31,4 cm",
+            "D) 62,8 cm"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "43. Observe a reta numérica: Um estudante marcou o ponto P e o ponto Q sobre a reta numérica.\n\nQual alternativa apresenta corretamente os números correspondentes aos pontos P e Q?",
+          "image": "reta.png",
+          "options": [
+            "A) P = 6 e Q = −2",
+            "B) P = −6 e Q = 2",
+            "C) P = −2 e Q = 6",
+            "D) P = 2 e Q = −6"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "44. Observando uma figura retangular desenhada em uma malha quadriculada. Suas dimensões são 6 quadradinhos de comprimento por 3 quadradinhos de largura. A figura foi reduzida pela metade em todas as suas dimensões.\n\nQual será a área da figura reduzida?",
+          "options": [
+            "A) 4,5 quadradinhos",
+            "B) 9 quadradinhos",
+            "C) 18 quadradinhos",
+            "D) 36 quadradinhos"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "45. Em uma pesquisa, as notas de cinco alunos foram: 6, 7, 8, 9 e 10. Qual é a média dessas notas?",
+          "options": [
+            "A) 7",
+            "B) 8",
+            "C) 8,5",
+            "D) 9"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "46. As idades de cinco estudantes são: 12, 14, 14, 15 e 16 anos. Qual é a moda dessas idades?",
+          "options": [
+            "A) 12",
+            "B) 14",
+            "C) 15",
+            "D) 16"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "47. Observe os pontos no plano cartesiano:\nA = (2,3)\nB = (-2,3)\nC = (-2,-3)\nD = (2,-3)\n\nEm qual quadrante está localizado o ponto A?",
+          "options": [
+            "A) I",
+            "B) II",
+            "C) III",
+            "D) IV"
+          ],
+          "answer": 0
+        },
+        {
+          "question": "48. O ponto P = (-4,2) está localizado em qual quadrante do plano cartesiano?",
+          "options": [
+            "A) I",
+            "B) II",
+            "C) III",
+            "D) IV"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "49. Na escola Erundina, 200 estudantes responderam a uma pesquisa sobre a preferência esportiva:\n\n90 preferem futebol;\n60 preferem vôlei;\n30 preferem basquete;\n20 preferem handebol.\n\nEscolhendo um estudante ao acaso, a probabilidade de ele não preferir futebol é de?",
+          "options": [
+            "A) 45%",
+            "B) 50%",
+            "C) 55%",
+            "D) 60%"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "50. Considere a função:\nf(x) = 2x - 2\n\nQual é o valor de f(4)?",
+          "options": [
+            "A) 5",
+            "B) 6",
+            "C) 7",
+            "D) 8"
+          ],
+          "answer": 1
+        },
         {
           "question": "51. Um sistema é formado pelas equações:<br/><br/>\n\nx + y = 10<br/> \nx – y = 2\n\n<br/><br/>Qual é o valor de y?",
           "options": [
